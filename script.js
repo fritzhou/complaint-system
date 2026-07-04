@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzfYYioueU3eRVzcOWhMKbN3o49tLXbq93zkKLkzDT8Elmpkoy03hjrs1OHo0cUVisG/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzz5x8bdvrqTVfe5VxNGqLc0P5IoePdWLZI3-gduRg9N11sCXOKazxP6TMNP0MhS0qp/exec";
 
 // SUBMIT FORM (only runs on index.html)
 const form = document.getElementById("submissionForm");
