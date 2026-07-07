@@ -1,26 +1,30 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
   margin: 0;
-  background: #f4f7fb;
-  color: #333;
+  background: #fdf5f7;
+  color: #3a1f28;
 }
 
 .container {
   max-width: 900px;
   margin: 40px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(214, 51, 108, 0.12);
+  border: 1px solid #f7dbe4;
 }
 
 h1 {
   text-align: center;
-  color: #1f4b99;
+  color: #FF88BA;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 p {
   text-align: center;
+  color: #8a6874;
 }
 
 form {
@@ -29,61 +33,101 @@ form {
 }
 
 label {
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #3a1f28;
 }
 
 input, select, textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1.5px solid #f3d3dd;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fffafb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #FF3E9B;
+  box-shadow: 0 0 0 3px rgba(214, 51, 108, 0.15);
 }
 
 textarea {
   min-height: 120px;
+  resize: vertical;
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px;
-  background: #1f4b99;
-  color: white;
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #FF3E9B, #FF88BA);
+  color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 button:hover {
-  background: #163a75;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(214, 51, 108, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 .success {
-  color: green;
+  color: #2e7d32;
   text-align: center;
   margin-top: 10px;
+  font-weight: 600;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;   /* columns stay fixed width, won't stretch */
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
+  border: 1px solid #f7dbe4;
+  padding: 12px;
   text-align: left;
+  word-wrap: break-word;      /* wraps long unbroken words */
+  overflow-wrap: break-word;  /* modern equivalent, keep both for support */
+  word-break: break-word;     /* extra safety for very long strings/URLs */
+  vertical-align: top;
 }
 
 th {
-  background: #1f4b99;
-  color: white;
+  background: #FF3E9B;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+tr:nth-child(even) td {
+  background: #fdf5f7;
+}
+th:nth-child(2), td:nth-child(2) {
+  width: 30%;
 }
 
 .filters {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
 }
